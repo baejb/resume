@@ -1,0 +1,26 @@
+.typing-effect {
+    height: 100%;
+    overflow: hidden;
+    border-right: 2px solid #000; /*텍스트를 입력하는 커서 효과*/
+    white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 함 */
+    margin: 0 ;
+    padding: 0;
+    display: inline-block;
+    width: 0; /* 시작할 때 텍스트가 보이지 않도록 함 */
+    animation: typing 3s steps(30, end) forwards, blinking 1s infinite;
+    
+}
+@keyframes typing {
+    to {
+      width: 100%; /* 텍스트가 완전히 나타날 때까지 키보드 입력 효과 */
+    }
+  }
+@keyframes blinking { /* 깜빡이는 커서 생성 */
+    0% {border-right-color: transparent}
+    50% {border-right-color: black}
+    100% {border-right-color: transparent}
+  }  
+#titleFe{
+    color:#05b8ff;
+}
+

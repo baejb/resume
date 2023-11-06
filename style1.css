@@ -8,19 +8,25 @@
   margin: 0px;
   padding: 0px;
   font-family: 'GmarketSansMedium';
+
   
 }
 a {
   text-decoration: none
 }
 body{
-  width: 1024px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#main{
+  width:1000px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding:10px;
 }
-
 .typing-effect {
     font-size: 36px;
     width: 100%;
@@ -33,11 +39,11 @@ body{
     display: inline-block;
     width: 0; /* 시작할 때 텍스트가 보이지 않도록 함 */
     animation: typing 3s steps(30, end) forwards, blinking 1s infinite;
-    
+    padding: 10px;
 }
 @keyframes typing {
     to {
-      width: 60%; /* 텍스트가 완전히 나타날 때까지 키보드 입력 효과 */
+      width: 75%; /* 텍스트가 완전히 나타날 때까지 키보드 입력 효과 */
     }
   }
 @keyframes blinking { /* 깜빡이는 커서 생성 */
@@ -51,9 +57,11 @@ body{
 
 #profileImg{
   width: 180px;
-  height: 180px;
+  height: 200px;
   border-radius: 50px;
-  border: 2px solid black;
+  border: 1px solid black;
+  background-image: url("./bjb.jpg");
+  background-size:cover;
 }
 .profile{
   display: flex;
@@ -88,6 +96,7 @@ h4{
 }
 
 #intro{
-  margin-top: 5%;
-  width:70%;
+  margin-top: 2%;
+  width:75%;
+  padding: 10px;
 }

@@ -59,13 +59,13 @@ body{
   width: 180px;
   height: 200px;
   border-radius: 50px;
-  border: 1px solid black;
   background-image: url("./bjb.jpg");
   background-size:cover;
 }
 .profile{
+  width:75%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 20px;
 
@@ -73,7 +73,7 @@ body{
 #contact{
   font-size: 18px;
   border-left:5px solid #05b8ff;
-  margin-left: 20px;
+  margin-left: 40px;
   padding-left: 10px;
 }
 .font-small{
@@ -99,17 +99,23 @@ h4{
   margin-top: 2%;
   width:75%;
   padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 2%;
+ 
 }
 .mid-title{
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border:2px solid #aaaaaa;
-  padding: 10px;
+  width: 80%;
+  height: 70%;
+  border:1px solid #aaaaaa29;
+  padding: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #aaaaaa;
 }
 h4{
   font-size: 20px;
@@ -117,18 +123,35 @@ h4{
 #content{
   width: 75%;
   margin-top:10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+
 }
 .mid-name{
   font-size: 12px;
 }
 #activity{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  border:2px solid #aaaaaa;
-  padding: 10px;
+  width: 90%;
+  height: 70%;
+  border:1px solid #aaaaaa29;
+  padding: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #aaaaaa;
+}
+.layout{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:33%;
+  
+}
+.project-title{
+  font-size:24px;
 }

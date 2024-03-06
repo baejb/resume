@@ -117,6 +117,7 @@ h4{
 }
 .mid-title{
   width: 80%;
+  min-width: 180px;
   height: 70%;
   border:1px solid #aaaaaa29;
   padding: 15px;
@@ -128,6 +129,15 @@ h4{
   align-items: center;
   border-radius: 10px;
   box-shadow: 1px 1px 4px #aaaaaa;
+  @media screen and (max-width: 900px) {
+    width:400px;
+    align-items: start;
+    flex-direction: row;
+    
+  }
+  > ul{
+    width:80%;
+  }
 }
 h4{
   font-size: 20px;
@@ -138,30 +148,37 @@ h4{
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
 }
 .mid-name{
   font-size: 12px;
 }
-#activity{
-  width: 90%;
-  height: 70%;
-  border:1px solid #aaaaaa29;
-  padding: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 1px 1px 4px #aaaaaa;
-}
+
 .layout{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width:33%;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+}
+.skills-title{
+  font-size: 14px;
+  text-align: start;
+  width: 80%;
+  min-height: 100px;
+  
+
+  
+  
   
 }
 #project{

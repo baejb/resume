@@ -8,6 +8,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'GmarketSansMedium';
+ 
 
   
 }
@@ -206,6 +207,14 @@ h4{
   justify-content: center;
 
 }
+.project-left-layout{
+    width: 50%;
+    min-width: 200px;
+    @media screen and (max-width: 900px) {
+      min-width: 200px;
+    }
+   
+}
 .project-span{
   display: inline-block;
   width:80px;
@@ -215,11 +224,14 @@ h4{
   
 }
 #description{
-  width:100%;
+  width:60%;
   font-size: 14px;
   border-left: 4px solid #05b8ff;
   margin-left: 20px;
   padding-left:20px;
+  @media screen and (max-width: 900px) {
+    min-width: 400px;
+  }
 }
 .ido{
   width:110px;
@@ -228,6 +240,21 @@ h4{
   margin-bottom:10px;
   background:linear-gradient(180deg,rgba(255,255,255,0) 60%, #aaaaaa7e 40%);
  
+}
+.feel{
+  width: 120px; 
+  padding: 2px;
+  margin-top:10px;
+  margin-bottom:10px;
+  background:linear-gradient(180deg,rgba(255,255,255,0) 60%, #aaaaaa7e 40%);
+}
+.reference{
+  width:80px; 
+  padding: 2px;
+  margin-top:10px;
+  margin-bottom:10px;
+  background:linear-gradient(180deg,rgba(255,255,255,0) 60%, #aaaaaa7e 40%);
+
 }
 .github{
   margin-top:10px;

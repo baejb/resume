@@ -33,7 +33,7 @@ body{
   align-items: center;
 }
 #main{
-  width:1000px;
+  width:100vw;
   display: flex;
   justify-content: center;
   align-items: center;

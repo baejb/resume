@@ -33,14 +33,15 @@ body{
   align-items: center;
 }
 #main{
-  width:100vw;
+  width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding:10px;
-  @media screen and (max-width: 601px) {
-    min-width: 600px;
+  @media screen and (max-width: 401px) {
+    min-width: 400px;
+   
   }
 }
 .typing-effect {
@@ -56,10 +57,14 @@ body{
     width: 0; /* 시작할 때 텍스트가 보이지 않도록 함 */
     animation: typing 3s steps(30, end) forwards, blinking 1s infinite;
     padding: 10px;
+    @media screen and (max-width: 601px) {
+      font-size:22px;
+     
+    }
 }
 @keyframes typing {
     to {
-      width: 75%; /* 텍스트가 완전히 나타날 때까지 키보드 입력 효과 */
+      width:80%; /* 텍스트가 완전히 나타날 때까지 키보드 입력 효과 */
     }
   }
 @keyframes blinking { /* 깜빡이는 커서 생성 */
@@ -77,13 +82,22 @@ body{
   border-radius: 50px;
   background-image: url("./bjb.jpg");
   background-size:cover;
+  @media screen and (max-width: 900px) {
+    width:120px;
+    height: 140px;
+    border-radius: 20px;
+  }
 }
 .profile{
-  width:75%;
+  width:100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin: 20px;
+  @media screen and (max-width: 900px) {
+    
+  }
+  
 
 }
 #contact{
@@ -91,6 +105,12 @@ body{
   border-left:5px solid #05b8ff;
   margin-left: 40px;
   padding-left: 10px;
+  @media screen and (max-width: 900px) {
+    margin-left: 10px;
+    width: 50%;
+    
+    
+  }
 }
 .font-small{
   font-size: small;
@@ -108,15 +128,25 @@ h4{
   color: #28323c;
   display: inline-block;
   width: 80px;
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+    
+  }
  
 }
 
 #intro{
   margin-top: 2%;
-  width:75%;
+  width:80%;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 2%;
+  font-size: 16px;
+  text-align: center;
+  @media screen and (max-width: 900px) {
+    font-size:14px;
+   
+  }
  
 }
 .mid-title{
@@ -145,9 +175,14 @@ h4{
 }
 h4{
   font-size: 20px;
+  @media screen and (max-width: 900px) {
+    font-size: 16px;
+    
+  }
+  
 }
 #content{
-  width: 75%;
+  width: 80%;
   margin-top:10px;
   display: flex;
   justify-content: center;
@@ -155,6 +190,7 @@ h4{
   @media screen and (max-width: 900px) {
     flex-direction: column;
     align-items: center;
+   
   }
 
 }
@@ -186,7 +222,8 @@ h4{
   
 }
 #project{
-  width:75%;
+  width:80%;
+  /* padding: 40px; */
   display: flex;
   flex-direction: column;
   
@@ -208,13 +245,16 @@ h4{
   margin-bottom:20px;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 
 }
 .project-left-layout{
-    width: 50%;
-    min-width: 200px;
+    width: 30%;
     @media screen and (max-width: 900px) {
-      min-width: 200px;
+      width: 100%;
+      
     }
    
 }
@@ -233,7 +273,9 @@ h4{
   margin-left: 20px;
   padding-left:20px;
   @media screen and (max-width: 900px) {
-    min-width: 400px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 .ido{
